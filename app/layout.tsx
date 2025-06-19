@@ -10,8 +10,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-    title: "PBDASH",
-    description: "PBDASH INFORMATION PAGE",
+    title: "RANKED PACEMAN",
+    description: "MCSR RANKED PACEMAN",
 };
 
 export default function RootLayout({
