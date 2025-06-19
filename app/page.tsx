@@ -120,6 +120,8 @@ export default function TestPage() {
           <Link color={"gray"} href={"/privacy"}>Datenschutz</Link>
           <Link color={"gray"}>|</Link>
           <Link color={"gray"} href={"https://mcsrranked.com/"}>MCSR Ranked</Link>
+          <Link color={"gray"}>|</Link>
+          <Link color={"gray"} href={"https://paceman.gg/"}>Paceman</Link>
         </div>
       </div>
   );
