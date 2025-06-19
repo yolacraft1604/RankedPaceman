@@ -5,6 +5,7 @@ import { Link, DropdownMenu, Button, Text, Heading, Flex, ScrollArea, SegmentedC
 import React from 'react';
 import {Split} from "@/components/Element";
 import {SmSplit} from "@/components/smElement";
+import {splitToIndex} from "@/utils/msToFormat";
 
 type Player = {
   name: string;
@@ -74,7 +75,11 @@ export default function TestPage() {
         <ScrollArea className="bg-neutral-200 dark:bg-neutral-800 max-w-[80rem] rounded-md" type="always"
                     scrollbars="vertical" style={{height: 600}}>
         <div className="hidden md:block">
-            {data.map((entry, index) => (
+            {data
+                .sort((a, b) => splitToIndex(a.split) - splitToIndex(b.split))
+                .reverse()
+                .map((entry, index) => (
+
                 <React.Fragment key={entry.player.name}>
                   <Split
                       split={entry.split}
