@@ -21,7 +21,7 @@ type ApiResponse = {
 
 export async function GET() {
     try {
-        const res = await fetch('http://localhost:5500/api/getLive');
+        const res = await fetch('http://45.93.249.131:8001/api/getLive');
 
         if (!res.ok) {
             return NextResponse.json({ error: 'Failed to fetch live data' }, { status: res.status });
