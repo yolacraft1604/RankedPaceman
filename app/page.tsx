@@ -88,6 +88,7 @@ export default function TestPage() {
                       time={entry.time}
                       url={entry.url}
                       Matchtime={entry.realtime}
+                      rank={entry.player.Rank}
                   />
                   {index < data.length - 1 && (
                       <div className="w-full bg-neutral-400 h-[1px]"></div>

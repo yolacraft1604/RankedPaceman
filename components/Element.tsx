@@ -13,9 +13,10 @@ interface Props {
     time: number;
     Matchtime: number;
     url: string;
+    rank: number;
 }
 
-export const Split: React.FC<Props> = ({IngameName, split, Country, time, Matchtime, url}) => {
+export const Split: React.FC<Props> = ({IngameName, split, Country, time, Matchtime, url, rank}) => {
 
     return (
             <div className="flex justify-between w-full p-1 px-6">
@@ -27,7 +28,8 @@ export const Split: React.FC<Props> = ({IngameName, split, Country, time, Matcht
                     <Text size={"6"}>
                         {IngameName}
                     </Text>
-                    {Country != undefined && (<img src={`https://countryflagsapi.netlify.app/flag/${Country}.svg`} className="h-6"/>)}
+                    {Country != undefined && (<img src={`https://countryflagsapi.netlify.app/flag/${Country}.svg`} className="h-6 hidden xl:block"/>)}
+                    <Text size={"6"} className=" hidden xl:block">#{rank}</Text>
                 </div>
                 <div className="flex gap-2 w-[21rem]">
                     <img src={splitToIndex(split) + ".png"} className="w-8 h-8"/>
