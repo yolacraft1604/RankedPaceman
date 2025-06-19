@@ -31,7 +31,7 @@ export const Split: React.FC<Props> = ({IngameName, split, Country, time, Matcht
                     {Country != undefined && (<img src={`https://countryflagsapi.netlify.app/flag/${Country}.svg`} className="h-6 hidden xl:block"/>)}
                     <Text size={"6"} className=" hidden xl:block">#{rank}</Text>
                 </div>
-                <div className="flex gap-2 w-[21rem]">
+                <div className="flex gap-2 w-[22rem]">
                     <img src={splitToIndex(split) + ".png"} className="w-8 h-8"/>
                     <div className="flex gap-8 justify-end w-full">
                         {splitToIndex(split) == 1 && <Text size={"6"}>Enter Nether</Text>}
