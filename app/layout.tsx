@@ -10,8 +10,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-    title: "RANKED PACEMAN",
-    description: "MCSR RANKED PACEMAN",
+    title: "Ranked Paceman",
+    description: "MCSR Ranked Paceman",
 };
 
 export default function RootLayout({
